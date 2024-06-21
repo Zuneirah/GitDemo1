@@ -18,6 +18,7 @@ public class TakeScreenshot {
 		
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src,new File("C:\\Users\\Abdul Samir Shaikh\\eclipse-workspace\\SeleniumTestProject2\\Screenshot\\screenshot.png"));
+		System.out.println("Screenshot code added");
 		driver.quit();
 
 	}
